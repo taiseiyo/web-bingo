@@ -4,3 +4,8 @@
   - URL(GitHub Pages): https://taiseiyo.github.io/web-bingo/
   - URL(Firebase): https://web-bingo-281d0.web.app/
 
+** Directory
+
+- Programs related to GitHub pages are put together in the docs
+  directory, and programs related to Firebase are put together in
+  firebase-web-bingo. Both are bingo games that run on the web.

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Bingo Master!!</title>
+  <link href="./bingo.css" rel="stylesheet"/>
+</head>
+
+
+<body class="back">
+  <div class="tmp">
+    <h1 class="bingo">ビンゴカード(1~72)</h1>
+    <h1 class="bingo2">右のボックスをクリックしてスタート</h1> 
+  </div>
+
+  <div class="tmp2">
+    <table class="waku" border="3">
+      <tr>
+	<td align="center" class="suzi" id="id1"></td>
+	<td align="center" class="suzi" id="id2"></td>
+	<td align="center" class="suzi" id="id3"></td>
+    </tr>
+      
+      <tr>
+	<td align="center" class="suzi" id="id4"></td>
+	<td align="center" class="suzi" id="id5"></td>
+	<td align="center" class="suzi" id="id6"></td>
+      </tr>
+      
+      <tr>
+	<td align="center" class="suzi" id="id7"></td>
+	<td align="center" class="suzi" id="id8"></td>
+	<td align="center" class="suzi" id="id9"></td>
+      </tr>
+    </table>
+    
+    <script type="text/javascript" src="./bingo.js"></script>
+    <script>
+      for(let i = 0; i < ids.length; i++) {
+	document.getElementById(ids[i]).textContent = arr[i]
+      } 
+    </script>
+    
+    
+    <table border="1" class="res" id="table2">
+      <tr>
+	<td align="center" class="suzi2" id="id10"></td>
+      </tr>
+    </table>
+    
+    <script>
+      document.getElementById("table2").onclick = function() {
+	if(flag==true){
+	  flag=false;
+	}
+	else{
+	  flag=true;
+	}
+
+	
+	if(flag==true){
+	  startBingo();
+	  startMusic();
+	}
+	else{
+	  stopBingo();
+	  stopMusic();
+	}
+      }
+      
+    </script>
+  </div>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.0.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries
+    -->
+  <script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>
