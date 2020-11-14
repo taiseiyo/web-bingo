@@ -1,3 +1,6 @@
 * *web bingo*
 ** URL
-- URL: https://taiseiyo.github.io/web-bingo/
+- Published on both GitHub Pages and Firebase
+  - URL(GitHub Pages): https://taiseiyo.github.io/web-bingo/
+  - URL(Firebase): https://web-bingo-281d0.web.app/
+
